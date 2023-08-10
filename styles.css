@@ -1,0 +1,735 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding-top: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 15px 0px;
+  /* background-color: crimson; */
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3 ease;
+}
+
+.sticky {
+  padding: 15px 0px;
+  background: crimson;
+  transition: all 0.3 ease;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .logo a span {
+  color: crimson;
+  transition: all 0.3 ease;
+}
+.sticky .logo a span {
+  color: #fff;
+  transition: all 0.3 ease;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: crimson;
+}
+.sticky .menu li a:hover {
+  color: #fff;
+  transition: all 0.3 ease;
+}
+
+/* menu btn styling */
+.menu-btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Dark-Wallpaper-1920x1080-Free-Download.jpg")
+    no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content {
+  font-size: 27px;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+  color: crimson;
+  font-weight: 500;
+}
+
+.home .home-content a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+  color: crimson;
+  background: none;
+}
+/* all similar styling code content */
+.about,
+.projects,
+.skills,
+.contact,
+.exp,
+footer {
+  font-size: "Poppins", sans-serif;
+}
+
+section {
+  padding: 100px 0;
+}
+.about .about-content,
+.projects .proj-content,
+.skills .skills-content,
+.contact .contact-content,
+.exp .exp-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 250px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  font-size: 20px;
+  color: crimson;
+  background: #fff;
+  transform: translateX(-50%);
+}
+/* about section */
+
+.about .title::after {
+  content: "who i am";
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about .about-content .right .text span {
+  color: crimson;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: crimson;
+  background: none;
+}
+
+/* projects Section styling */
+.projects,
+.languages {
+  color: #fff;
+  background-color: #111;
+}
+.projects .title::before,
+.languages .title::before {
+  background: #fff;
+}
+.projects .title::after,
+.languages .title::after {
+  background-color: #111;
+  content: "What i have done?";
+}
+
+.projects .proj-content .card {
+  width: calc(33% - 20px);
+  background-color: #222;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projects .proj-content .card:hover {
+  background: crimson;
+}
+.projects .proj-content .card .box {
+  transition: all 0.3s ease;
+}
+.projects .proj-content .card:hover .box {
+  transform: scale(1.05);
+}
+.projects .proj-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.projects .proj-content .card:hover i {
+  color: #fff;
+}
+.projects .proj-content .card .text {
+  color: #f3bbbb;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0 7px 0;
+}
+
+.projects .proj-content .card p {
+  margin-top: 20px;
+}
+.lang {
+  margin-top: 10px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  text-align: left;
+  padding: 3%;
+}
+
+/* Skills Section styling */
+.skills .title::after {
+  content: "What I know";
+}
+
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+  text-align: justify;
+}
+.skills .skills-content .left .text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .left img {
+  justify-content: center;
+  padding: 50px;
+  width: 80%;
+}
+
+.skills .skills-content .left a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+  color: crimson;
+  background: none;
+}
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background-color: lightgray;
+  position: relative;
+}
+
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+
+.skills .skills-content .right .web::before {
+  width: 90%;
+}
+
+.skills .skills-content .right .front::before {
+  width: 80%;
+}
+
+.skills .skills-content .right .back::before {
+  width: 75%;
+}
+
+.skills .skills-content .right .design::before {
+  width: 75%;
+}
+.skills .skills-content .right .prob::before {
+  width: 70%;
+}
+.skills .skills-content .right .process::before {
+  width: 60%;
+}
+.skills .skills-content .right .time::before {
+  width: 80%;
+}
+
+.skills .skills-content .right .solidworks::before {
+  width: 80%;
+}
+
+/* Languages and frameworks */
+.languages .title::after {
+  content: "Which I worked";
+}
+
+.languages .carousel .card {
+  background-color: #222;
+  border-radius: 15px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.languages .carousel .card:hover {
+  background: crimson;
+  transition: all 0.3s ease;
+}
+
+.languages .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.languages .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.languages .carousel .card img {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 15%;
+  object-fit: cover;
+}
+
+.languages .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.languages .carousel .card:hover img {
+  border-color: #fff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: crimson !important;
+}
+
+/* Contact Section Styling */
+.contact .title::after {
+  content: "Get in touch";
+  
+}
+.contact{
+    background-color: #ffffff;
+}
+
+.contact .contact-content{
+    background-color: #222;
+}
+
+.contact h2{
+    color: #000000;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #fff;
+}
+.contact .contact-content .column {
+    
+  margin: 0px auto;
+  width: 90%;
+}
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.contact .contact-content .left p {
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    color: #fff;
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info {
+    
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    
+  font-size: 25px;
+  color: crimson;
+}
+
+.contact .contact-content .info .head {
+    color: #fff;
+  font-weight: bold;
+}
+.contact .contact-content .info a{
+    color: #fff;
+}
+
+
+/* Experience section */
+.exp{
+  color: #111;
+  background-color: #fff;
+}
+.exp .title::before{
+  background: #000000;
+}
+.exp .title::after{
+  background-color: #fffbfb;
+  content: "Indsutry";
+}
+
+.exp .exp-content .card {
+  width: 45%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.exp .exp-content .card:hover {
+  background: crimson;
+}
+.exp .exp-content .card .box {
+  transition: all 0.3s ease;
+}
+.exp .exp-content .card:hover .box {
+  transform: scale(1.05);
+}
+.exp .exp-content .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.exp .exp-content .card:hover i {
+  color: #fff;
+}
+.exp .exp-content .card .text {
+  color: #17010a;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0 7px 0;
+}
+
+.exp .exp-content .card p {
+  margin-top: 20px;
+}
+.lang {
+  margin-top: 10px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  text-align: left;
+  padding: 3%;
+}
+
+/* footer section */
+footer {
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover {
+  border-bottom: 1px solid crimson;
+}
+/* responsive media query start */
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active::before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .projects .proj-content .card {
+    width: calc(50% -10px);
+    margin-bottom: 20px;
+  }
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .exp .exp-content .card {
+    width: calc(50% -10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+  .projects .proj-content .card {
+    width: 100%;
+  }
+
+  .exp .exp-content .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+}
