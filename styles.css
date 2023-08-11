@@ -23,6 +23,7 @@ html {
   /* background-color: crimson; */
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3 ease;
+  background-color: #111;
 }
 
 .sticky {
@@ -252,7 +253,7 @@ section .title::after {
 .projects .title::after,
 .languages .title::after {
   background-color: #111;
-  content: "What i have done?";
+  content: "What i've done?";
 }
 
 .projects .proj-content .card {
@@ -716,7 +717,9 @@ footer span a:hover {
   .projects .proj-content .card {
     width: 100%;
   }
-
+  .languages .carousel .card{
+    width: 100%;
+  }
   .exp .exp-content .card {
     width: 100%;
   }
